@@ -16,11 +16,11 @@ public class UserOrgRoom implements Serializable{
     @ColumnInfo(name = "Last_name")
     private String lname;
 
-    @ColumnInfo(name = "Emial")
+    @ColumnInfo(name = "Email")
     private String email;
 
     @ColumnInfo(name = "Date_of_birth")
-    private Date dob;
+    private String dob;
 
     @ColumnInfo(name = "address")
     private String address;
@@ -66,11 +66,11 @@ public class UserOrgRoom implements Serializable{
         this.email = email;
     }
 
-    public Date getDob() {
+    public String getDob() {
         return dob;
     }
 
-    public void setDob(Date dob) {
+    public void setDob(String dob) {
         this.dob = dob;
     }
 
